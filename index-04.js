@@ -1,8 +1,9 @@
-//MIDDLEWARE logger
+// MIDDLEWARE logger
 
 const express = require("express");
 const app = express();
 
+// Middleware
 app.use((req, res, next) => {
     console.log(`Route: ${req.url} Method: ${req.method}`)
     next()
@@ -16,6 +17,7 @@ app.use((req, res, next) => {
     }
 })
 
+// Route
 app.get('/dashboard', (req,res) => {
     res.send('Dashboard page')
 })

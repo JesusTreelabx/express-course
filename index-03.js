@@ -1,4 +1,4 @@
-//QUERIES
+// QUERIES
 const express = require("express")
 
 const app = express()
